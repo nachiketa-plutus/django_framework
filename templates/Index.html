@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Template is working properly!</title>
+</head>
+<body>
+<h2>Hello user!, this will very shortly display the HOME section of the textutils project, and any user can
+    navigate through various utility pages through this page itself. The buttons should serve the purpose.
+    </h2><br><h2> Best regards from Nachiketa! </h2>
+
+<button onclick='document.location="http://127.0.0.1:8000/About"'> <strong><h2>About</h2></strong> </button> <br> <br> <hr>
+<h2> Dear guest, enter the text you wish to analyze: </h2>
+
+<form action='http://127.0.0.1:8000/analyze' method='get'>
+    <textarea
+            name='text' style='margin: 0px; width: 1237px; height: 212px;'>
+    </textarea>
+    <br>
+    <button type='submit'> <!--onclick="document.location='http://127.0.0.1:8000/analyze'"--> <h2><strong>Analyze text</strong></h2> </button>
+</form>
+
+<br> <br> <br>
+
+</body>
+</html>
