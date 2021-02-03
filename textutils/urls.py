@@ -1,7 +1,10 @@
+
+
+# Urls.py
 """textutils URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/3.1/topics/http/urls/
+    https://docs.djangoproject.com/en/2.1/topics/http/urls/
 Examples:
 Function views
     1. Add an import:  from my_app import views
@@ -13,28 +16,24 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-
 from django.contrib import admin
-# from django.urls import path
-from django.urls import include, path
+from django.urls import path
 from . import views
 
+# Code for video 6
+# urlpatterns = [
+#     path('admin/', admin.site.urls),
+#     path('', views.index, name='index'),
+#     path('about/', views.about, name='about'),
+#
+# ]
 
-
+# Code for video 7
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("", views.Home, name="Home"),
-    path("about", views.About, name="About"),
-    path("analyze", views.analyze, name="analyze"),
-    path("remove-punctuation", views.removepunctuation, name="removepunctuation"),
-    path("capitalize-first", views.capitalizefirst, name="capitalizefirst"),
-    path("remove-space", views.removespace, name="removespace"),
-    path("newline-remove", views.newlineremove, name="newlineremove"),
-    path("char-count", views.charcount, name="charcount")
+    path('', views.index, name='index'),
+    path('analyze', views.analyze, name='analyze'),
 
 
 
-    # path("links", views.links, name="links"),
-    # path("file", views.file, name="file"),
-    # path("file2", views.file2, name="file2")
 ]
